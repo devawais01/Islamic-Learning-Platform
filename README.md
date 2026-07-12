@@ -145,13 +145,11 @@ islamic-learning-platform/
 
 - User Authentication
 - Course Enrollment System
-- Online Quran Learning Module
 - Progress Tracking Dashboard
 - Admin Panel
 - Backend API Integration
 - Database Integration
 - Search Functionality
-- Dark Mode
 - Multilingual Support
 - Performance Optimization
 
