@@ -42,9 +42,9 @@ This project was developed as part of my web development learning journey, empha
 
 ---
 
-### Courses Page
+### Registration Page
 
-![Courses Page](screenshots/courses.png)
+![Registration Page](screenshots/registration.png)
 
 ---
 
