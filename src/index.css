@@ -1,0 +1,459 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+              url("/images/pic.jpg") no-repeat center center / cover;
+  background-attachment: fixed;
+  color: #fff;
+  line-height: 1.6;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+body.dark {
+  background: #111 !important;
+  color: #eee;
+}
+
+body.dark nav {
+  background: linear-gradient(to right, #000, #333);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes floatUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes floatLogo {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+/* =========================
+   HEADER & LOGO
+========================= */
+.header img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.logo {
+  text-align: center;
+  margin-top: -60px;
+}
+
+.logo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255,255,255,0.7);
+  animation: floatLogo 3s ease-in-out infinite alternate;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+nav {
+  background: linear-gradient(to right, #283c86, #45a247);
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: 0.4s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #ffe26f;
+}
+
+/* =========================
+   HEADINGS & TEXT
+========================= */
+h1, h2, h3, p, ul, ol, table, video, audio {
+  animation: floatUp 1.2s ease;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 25px 0;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0;
+  color: #ffe26f;
+}
+
+h3 {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 10px 0;
+}
+
+p {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* =========================
+   LISTS
+========================= */
+ul, ol {
+  width: 80%;
+  margin: 15px auto;
+}
+
+/* =========================
+   IMAGES
+========================= */
+img {
+  max-width: 100%;
+}
+
+.course-images img,
+div img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+button,
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #36d1dc;
+}
+
+/* =========================
+   FORMS
+========================= */
+form {
+  width: 60%;
+  margin: 25px auto;
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  box-shadow: 0 0 10px #45a247;
+}
+
+/* =========================
+   TABLES
+========================= */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #fff;
+  background: rgba(0,0,0,0.4);
+}
+
+th {
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+/* =========================
+   MEDIA
+========================= */
+video, audio {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #ffe26f;
+  text-decoration: none;
+}
+.map-container {
+  text-align: center;
+}
+/* =========================
+   REGISTRATION PAGE
+========================= */
+
+.registration-page h1:hover {
+  color: #ffe26f;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* Slide-up animation for form */
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.registration-page form {
+  animation: slideUp 1.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glowing animated background */
+.registration-page form::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    #ff9a9e,
+    #fad0c4,
+    #a1c4fd,
+    #c2e9fb
+  );
+  filter: blur(120px);
+  z-index: -1;
+  animation: rotateGlow 8s linear infinite;
+}
+
+@keyframes rotateGlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   FIELDSETS & LEGENDS
+========================= */
+
+.registration-page fieldset {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.registration-page legend {
+  font-weight: bold;
+  color: #ffe26f;
+  padding: 0 10px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+/* =========================
+   LABELS
+========================= */
+
+.registration-page label {
+  display: inline-block;
+  width: 140px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   RADIO BUTTONS
+========================= */
+
+.radio-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.radio-group label {
+  width: auto;
+  font-weight: normal;
+}
+
+input[type="radio"] {
+  accent-color: #45a247;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* =========================
+   DARK MODE SUPPORT
+========================= */
+
+body.dark .registration-page fieldset {
+  border-color: #45a247;
+}
+
+body.dark .registration-page legend {
+  color: #45a247;
+}
+
+body.dark .registration-page input,
+body.dark .registration-page select {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.navbar {
+  position: relative;
+}
+
+/* Center nav links exactly like before */
+.nav-center {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Push dark mode button to the right */
+.nav-right {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.contact-info {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.contact-info a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 2.5rem;       /* Bigger icons */
+  transition: transform 0.3s, text-shadow 0.3s;
+}
+
+.contact-info a.youtube { color: #FF0000; }
+.contact-info a.facebook { color: #1877F2; }
+.contact-info a.twitter { color: #1DA1F2; }
+
+.contact-info a:hover {
+  transform: scale(1.3);    /* Grow on hover */
+  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor; /* Glow effect */
+}
+
+.center {
+  display: flex;           /* make it flex */
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+}
+
+
+/* =========================
+   JS-CONTROLLED HOVER EFFECT
+========================= */
+
+.scale-hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+h1.scale-hover,
+h2.scale-hover,
+h3.scale-hover {
+  color: #ffe26f; /* golden highlight */
+  text-shadow: 0 0 10px rgba(255, 226, 111, 0.8);
+}
+/* Error messages in red */
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
