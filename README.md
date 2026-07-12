@@ -27,6 +27,32 @@ This project was developed as part of my web development learning journey, empha
 
 ---
 
+
+## 📸 Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home.png)
+
+---
+
+### About Page
+
+![About Page](screenshots/about.png)
+
+---
+
+### Courses Page
+
+![Courses Page](screenshots/courses.png)
+
+---
+
+### Contact Page
+
+![Contact Page](screenshots/contact.png)
+---
+
 ## 🛠 Technologies Used
 
 ### Frontend
@@ -138,8 +164,11 @@ islamic-learning-platform/
 BS Computer Science  
 University of Central Punjab (UCP)
 
+
 - GitHub: https://github.com/devawais01
 - LinkedIn: https://www.linkedin.com/in/dev-awais01
+
+
 
 ---
 
