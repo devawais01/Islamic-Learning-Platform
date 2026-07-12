@@ -1,16 +1,158 @@
-# React + Vite
+# 🕌 Islamic Learning Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive web application designed to provide an engaging online Islamic learning experience. The platform offers a clean user interface, educational content, and a seamless browsing experience built with modern web technologies.
 
-Currently, two official plugins are available:
+> **Status:** 🚧 Under Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📖 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The **Islamic Learning Platform** is a frontend web application developed using **React** and **Vite**. The project focuses on creating an intuitive and responsive interface for users to explore Islamic educational resources and interact with the platform efficiently.
 
-## Expanding the ESLint configuration
+This project was developed as part of my web development learning journey, emphasizing component-based architecture, responsive design, and modern frontend development practices.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 🎨 Modern and responsive user interface
+- 📱 Mobile-friendly design
+- ⚡ Fast performance with Vite
+- 🧩 Reusable React components
+- 🧭 Smooth navigation
+- 📖 Educational content pages
+- 📞 Contact section
+- 🔐 Scalable project structure for future backend integration
+
+---
+
+## 🛠 Technologies Used
+
+### Frontend
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+### Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- npm
+
+---
+
+## 🚀 Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/islamic-learning-platform.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd islamic-learning-platform
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+### 5. Open your browser
+
+Visit:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🌐 Live Demo
+
+Coming Soon
+
+> The project will be deployed on **Vercel**.
+
+---
+
+## 📁 Folder Structure
+
+```
+islamic-learning-platform/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 🚀 Future Improvements
+
+- User Authentication
+- Course Enrollment System
+- Online Quran Learning Module
+- Progress Tracking Dashboard
+- Admin Panel
+- Backend API Integration
+- Database Integration
+- Search Functionality
+- Dark Mode
+- Multilingual Support
+- Performance Optimization
+
+---
+
+## 👨‍💻 Author
+
+**Muhammad Awais**
+
+BS Computer Science  
+University of Central Punjab (UCP)
+
+- GitHub: https://github.com/devawais01
+- LinkedIn: https://www.linkedin.com/in/dev-awais01
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+Feel free to use this project for learning and educational purposes.
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
+
+Feedback and suggestions are always welcome!
